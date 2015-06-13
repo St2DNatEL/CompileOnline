@@ -109,7 +109,7 @@ int Http::ParseMsgBody()
 		int iBodyLenth = atoi(strBodyLength.c_str());
 
 		int pos = strBuf.find("\r\n\r\n");
-		msgBody = string(strBuf.c_str()+pos+4);
+		msgBody = string(strBuf.c_str()+pos+4,iBodyLenth);
 	}
 	return RT_OK;
 }
