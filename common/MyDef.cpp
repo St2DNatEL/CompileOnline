@@ -30,3 +30,33 @@ int Split(vector<string> &vc, const string &str, const string &sp)
 	}
 	return RT_OK;
 }
+
+int MacToDos(char *filePath)
+{
+	FILE *f;
+	int c1,c2;
+    f=fopen(filePath,"rb+");
+    if (NULL==f) {
+        printf("Can not open file [%s]!\n",filePath);
+		return RT_ERR;
+    }
+    while (1) {
+        c1=fgetc(f);
+        if (EOF==c1) break;
+        if ('\r'==c1) {
+            c2=fgetc(f);
+            if (EOF==c2) {
+                fseek(f,-1L,SEEK_CUR);
+                fputc('\n',f);
+                break;
+            }
+            if ('\n'!=c2) {
+                fseek(f,-2L,SEEK_CUR);
+                fputc('\n',f);
+                fseek(f,1,SEEK_CUR);
+            }
+        }
+    }
+    fclose(f);
+	return RT_OK;
+}

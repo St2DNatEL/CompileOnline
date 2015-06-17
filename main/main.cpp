@@ -2,11 +2,13 @@
 #include "../net/MySocket.h"
 #include "../work/Work.h"
 #include "../work/MyWork.h"
+#include "../work/WorkFactory.h"
 
 
 int main()  
 {  
-	Work *myWork  = new MyWork;
+	WorkFactory *workFactory = new WorkFactory;
+	Work *myWork  = workFactory->CreateWork(MYWORK);
 
 	MySocket mySocket;
 	int rt = mySocket.InitSocket("0.0.0.0",8888);
@@ -28,6 +30,9 @@ int main()
 
 	delete myWork;
 	myWork = NULL;
+
+	delete workFactory;
+	workFactory = NULL;
 	
     system("pause");  
     return 0;  

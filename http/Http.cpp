@@ -153,6 +153,11 @@ const string& Http::GetQueryParamValue(const string &param)
 	map<string,string>::iterator it = mapQueryString.find(param);
 	if(it == mapQueryString.end())
 		return RT_INFO[RT_ERR];
-	
+
 	return it->second;
+}
+
+string& Http::GetMsgBody()
+{
+	return msgBody;
 }

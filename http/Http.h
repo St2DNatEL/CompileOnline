@@ -12,6 +12,7 @@
 */
 
 #include "../common/MyDef.h"
+#include "Url.h"
 #include <map>
 #include <vector>
 
@@ -28,7 +29,6 @@ public:
 	const string& GetClientIP();
 	short GetClientPort();
 	string& GetMsgBody();
-
 
 private:
 	int ParseRequestHead();

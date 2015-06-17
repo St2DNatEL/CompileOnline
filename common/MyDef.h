@@ -48,6 +48,13 @@ const string RT_INFO[RT_NUM] = {
 	"parese error",
 };
 
+enum WORKTYPE
+{
+	MYWORK,
+};
+
 int Split(vector<string> &vc, const string &str, const string &sp);
+
+int MacToDos(char *filePath);
 
 #endif
