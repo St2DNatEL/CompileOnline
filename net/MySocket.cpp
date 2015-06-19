@@ -118,15 +118,16 @@ void MySocket::Do()
 		if(myWork == NULL)
 			return;
 		
-		cout << recvBuf << endl;
+		//cout << recvBuf << endl;
 		string sendbuf;
 		int sendlen = 0;
 		
 		myWork->DoWork(recvBuf,strlen(recvBuf),sendbuf,sendlen);
 
-		char sndbuf[RCVBUFMAX];
+		/*char sndbuf[RCVBUFMAX];
 		sprintf(sndbuf, RESPHTTP, sendlen, sendbuf.c_str());
-		len = send(sockConn, sndbuf, strlen(sndbuf), 0);
+		len = send(sockConn, sndbuf, strlen(sndbuf), 0);*/
+		len = send(sockConn, sendbuf.c_str(), sendbuf.length(), 0);
 		if(len < 0)
 		{
 			//

@@ -64,9 +64,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\common\MyDef.cpp" />
     <ClCompile Include="..\..\http\Http.cpp" />
+    <ClCompile Include="..\..\http\RequestHttp.cpp" />
+    <ClCompile Include="..\..\http\ResponseHttp.cpp" />
     <ClCompile Include="..\..\http\Url.cpp" />
     <ClCompile Include="..\..\main\main.cpp" />
     <ClCompile Include="..\..\net\MySocket.cpp" />
+    <ClCompile Include="..\..\work\CompileWork.cpp" />
     <ClCompile Include="..\..\work\MyWork.cpp" />
     <ClCompile Include="..\..\work\Work.cpp" />
     <ClCompile Include="..\..\work\WorkFactory.cpp" />
@@ -74,8 +77,11 @@
   <ItemGroup>
     <ClInclude Include="..\..\common\MyDef.h" />
     <ClInclude Include="..\..\http\Http.h" />
+    <ClInclude Include="..\..\http\RequestHttp.h" />
+    <ClInclude Include="..\..\http\ResponseHttp.h" />
     <ClInclude Include="..\..\http\Url.h" />
     <ClInclude Include="..\..\net\MySocket.h" />
+    <ClInclude Include="..\..\work\CompileWork.h" />
     <ClInclude Include="..\..\work\MyWork.h" />
     <ClInclude Include="..\..\work\Work.h" />
     <ClInclude Include="..\..\work\WorkFactory.h" />

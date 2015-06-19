@@ -21,23 +21,8 @@ class Http
 public:
 	Http();
 	~Http(void);
-	int Parse(char *buf);
-	const string& GetMethod();
-	const string& GetMsgHeadParamValue(const string &param);
-
-	const string& GetQueryParamValue(const string &param);
-	const string& GetClientIP();
-	short GetClientPort();
-	string& GetMsgBody();
-
-private:
-	int ParseRequestHead();
-	int ParseMsgHead();
-	int ParseMsgHeadContent();
-	int ParseMsgBody();
-	int ParseQueryString();
-
-private:
+	
+protected:
 	string strBuf;
 
 	//«Î«ÛÕ∑

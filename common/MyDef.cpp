@@ -31,7 +31,7 @@ int Split(vector<string> &vc, const string &str, const string &sp)
 	return RT_OK;
 }
 
-int MacToDos(char *filePath)
+int MacToDos(const char *filePath)
 {
 	FILE *f;
 	int c1,c2;

@@ -21,7 +21,7 @@ using namespace std;
 
 #define LOG(msg,file,line) printf("%s:%d %s\n",file,line,msg)
 
-const int RCVBUFMAX = 10240;
+const int RCVBUFMAX = 102400;
 
 enum RTIN
 {
@@ -51,10 +51,11 @@ const string RT_INFO[RT_NUM] = {
 enum WORKTYPE
 {
 	MYWORK,
+	COMPILEWORK,
 };
 
 int Split(vector<string> &vc, const string &str, const string &sp);
 
-int MacToDos(char *filePath);
+int MacToDos(const char *filePath);
 
 #endif

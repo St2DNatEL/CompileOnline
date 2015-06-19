@@ -8,7 +8,7 @@
 int main()  
 {  
 	WorkFactory *workFactory = new WorkFactory;
-	Work *myWork  = workFactory->CreateWork(MYWORK);
+	Work *myWork  = workFactory->CreateWork(COMPILEWORK);
 
 	MySocket mySocket;
 	int rt = mySocket.InitSocket("0.0.0.0",8888);

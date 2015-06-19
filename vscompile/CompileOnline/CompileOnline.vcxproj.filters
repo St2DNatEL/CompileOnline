@@ -54,6 +54,15 @@
     <ClCompile Include="..\..\http\Url.cpp">
       <Filter>源文件\http</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\http\RequestHttp.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\http\ResponseHttp.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\work\CompileWork.cpp">
+      <Filter>源文件\work</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\net\MySocket.h">
@@ -76,6 +85,15 @@
     </ClInclude>
     <ClInclude Include="..\..\http\Url.h">
       <Filter>源文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\http\RequestHttp.h">
+      <Filter>源文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\http\ResponseHttp.h">
+      <Filter>源文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\work\CompileWork.h">
+      <Filter>源文件\work</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

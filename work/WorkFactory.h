@@ -3,6 +3,7 @@
 
 #include "Work.h"
 #include "MyWork.h"
+#include "CompileWork.h"
 #include "../common/MyDef.h"
 
 class WorkFactory

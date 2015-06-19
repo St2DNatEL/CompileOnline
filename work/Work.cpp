@@ -14,3 +14,4 @@ int Work::DoWork(const char * recvbuf,const int recvlen,string &sendbuf,int & se
 	sendlen = strlen(sendbuf.c_str());
 	return RT_OK;
 }
+

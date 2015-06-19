@@ -18,7 +18,7 @@ class MyWork:public Work
 {
 public:
 	MyWork(void);
-	~MyWork(void);
+	virtual ~MyWork(void);
 
 	virtual int DoWork(const char *recvbuf, const int recvlen, string &sendbuf, int &sendlen);
 };
