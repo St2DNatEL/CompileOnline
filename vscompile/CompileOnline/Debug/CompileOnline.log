@@ -1,14 +1,11 @@
-﻿生成启动时间为 2015/6/18 21:22:38。
+﻿生成启动时间为 2015/6/20 22:55:48。
      1>项目“F:\work_nc\MyProject\CompileOnline\vscompile\CompileOnline\CompileOnline.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         E:\vs2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\work\CompileWork.cpp
-         CompileWork.cpp
-     1>f:\work_nc\myproject\compileonline\work\compilework.cpp(69): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 e:\vs2012\vc\include\stdio.h(357) : 参见“sprintf”的声明
-     1>f:\work_nc\myproject\compileonline\work\compilework.cpp(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 e:\vs2012\vc\include\stdio.h(357) : 参见“sprintf”的声明
+         E:\vs2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\main\main.cpp
+         main.cpp
        Link:
-         E:\vs2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\work_nc\MyProject\CompileOnline\vscompile\Debug\CompileOnline.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\work_nc\MyProject\CompileOnline\vscompile\Debug\CompileOnline.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\work_nc\MyProject\CompileOnline\vscompile\Debug\CompileOnline.lib" /MACHINE:X86 Debug\MyDef.obj
+         E:\vs2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\work_nc\MyProject\CompileOnline\vscompile\Debug\CompileOnline.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\work_nc\MyProject\CompileOnline\vscompile\Debug\CompileOnline.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\work_nc\MyProject\CompileOnline\vscompile\Debug\CompileOnline.lib" /MACHINE:X86 Debug\Log.obj
+         Debug\MyDef.obj
          Debug\Http.obj
          Debug\RequestHttp.obj
          Debug\ResponseHttp.obj
@@ -24,4 +21,4 @@
 
 生成成功。
 
-已用时间 00:00:02.81
+已用时间 00:00:02.69

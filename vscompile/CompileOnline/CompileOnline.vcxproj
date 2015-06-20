@@ -62,6 +62,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\common\Log.cpp" />
     <ClCompile Include="..\..\common\MyDef.cpp" />
     <ClCompile Include="..\..\http\Http.cpp" />
     <ClCompile Include="..\..\http\RequestHttp.cpp" />
@@ -75,6 +76,7 @@
     <ClCompile Include="..\..\work\WorkFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\common\Log.h" />
     <ClInclude Include="..\..\common\MyDef.h" />
     <ClInclude Include="..\..\http\Http.h" />
     <ClInclude Include="..\..\http\RequestHttp.h" />

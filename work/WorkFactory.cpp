@@ -17,6 +17,7 @@ Work*WorkFactory::CreateWork(WORKTYPE worktype)
 	case COMPILEWORK:
 		return new CompileWork;
 	default:
-		LOG("not suppport",__FILE__, __LINE__);
+		LOG("not suppport");
+		MyLogInstance->WriteLog("not suppport");
 	}
 }

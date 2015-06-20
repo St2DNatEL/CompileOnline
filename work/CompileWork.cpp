@@ -2,7 +2,7 @@
 #include "../Http/RequestHttp.h"
 #include <fstream>
 
-/*#define HTML "<!DOCTYPE html> <html> <head> \
+#define HTML "<!DOCTYPE html> <html> <head> \
 	<title>在线编译</title> \
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>\
 	 <!-- Bootstrap --> <link rel='stylesheet' href='http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css'> \
@@ -16,9 +16,9 @@
 	<textarea id='text_code' name='text_code' class='form-control' rows='10'>%s</textarea> </br> \
 	<input id='btn_code' type='submit' class='btn btn-primary' value='提 交'></button> </form> \
 	</br><div style='border:1px'><p><h3>结果为：<h3></p>%s</div> \
-	</div> </body> </html>"*/
+	</div> </body> </html>"
 
-#define HTML "<!DOCTYPE html> <html> <head> \
+/*#define HTML "<!DOCTYPE html> <html> <head> \
 	<title>在线编译</title> \
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>\
 	 <script> $(function() { \
@@ -29,7 +29,7 @@
 	<textarea id='text_code' name='text_code' class='form-control' rows='10'>%s</textarea> </br> \
 	<input id='btn_code' type='submit' class='btn btn-primary' value='提 交'></button> </form> \
 	</br><div style='border:1px'><p><h3>结果为：<h3></p>%s</div> \
-	</div> </body> </html>"
+	</div> </body> </html>"*/
 
 CompileWork::CompileWork()
 {
@@ -40,6 +40,8 @@ CompileWork::CompileWork()
 	this->exePath = "F://";
 	this->exeName = "compile.exe";
 	this->exeResult = "exe.rs";
+
+	textAreaValue = "please input code...";
 
 	exePathName = exePath + exeName;
 	cppPathName = cppPath + cppName;
@@ -52,6 +54,7 @@ CompileWork::CompileWork()
 CompileWork::~CompileWork()
 {
 	cout << "\n++++++++\n";
+	MyLogInstance->WriteLog("++++++++");
 	delete requestHttp;
 	delete responseHttp;
 }
@@ -61,51 +64,83 @@ int CompileWork::DoWork(const char *recvbuf, const int recvlen, string &sendbuf,
 	responseHttp->Init();
 	requestHttp->Parse(recvbuf);
 
-	char rtchar[2048] = {0};
-	
-
 	if(GetTextAreaValue() != RT_OK)
 	{
-		sprintf(rtchar, HTML, "请输入", "");
-		responseHttp->SetMsgBody(string(rtchar));
-		sendbuf = responseHttp->ResponseContent();
+		sendbuf = ReturnSendBuf("");
 		return RT_OK;
 	}
 	
-	WriteCPPToFile();
+	int rt = WriteCPPToFile();
+	if(rt != RT_OK)
+	{
+		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		return RT_OK;
+	}
 
-	CompileCPP();
+	rt = CompileCPP();
+	if(rt != RT_OK)
+	{
+		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		return RT_OK;
+	}
 
-	ReadCompileResult();
+	rt = ReadCompileResult();
+	if(rt != RT_OK)
+	{
+		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		return RT_OK;
+	}
 
-	ExecuteEXE();
+	rt = ExecuteEXE();
+	if(rt != RT_OK)
+	{
+		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		return RT_OK;
+	}
 
-	ReadExecuteResult();
+	rt = ReadExecuteResult();
+	if(rt != RT_OK)
+	{
+		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		return RT_OK;
+	}
 
-	
-
-	cout << exeInfo << endl;
-	sprintf(rtchar, HTML, /*requestHttp->GetQueryParamValue(TEXTAREANAME).c_str()*/"", exeInfo.c_str());
-	responseHttp->SetMsgBody(string(rtchar));
-	sendbuf = responseHttp->ResponseContent();
-	sendlen = sendbuf.length();
-
-	cout << "\n\n" << sendbuf << "\n\n";
+	sendbuf = ReturnSendBuf(exeInfo);
 	return RT_OK;
+}
+
+string CompileWork::ReturnSendBuf(const string &rtMsg)
+{
+	//todo: Restruct it 
+	char rtchar[2048] = {0};
+	string rtstr;
+	
+	string rtTXT = textAreaValue;
+	rtTXT = ReplaceAll(rtTXT,"<","&lt;");
+	rtTXT = ReplaceAll(rtTXT,">","&gt;");
+	
+	sprintf(rtchar, HTML, rtTXT.c_str(), rtMsg.c_str());
+	responseHttp->SetMsgBody(string(rtchar));
+	
+	rtstr = responseHttp->ResponseContent();
+
+	cout << "\n\n" << rtstr << "\n\n";
+	MyLogInstance->WriteLog("\n%s\n",rtstr.c_str());
+	return rtstr;
 }
 
 void CompileWork::SetCppPathName(const string &cppPath, const string &cppName)
 {
 	this->cppPath = cppPath;
 	this->cppName = cppName;
-	cppPathName = cppPath + cppName;
+	cppPathName = cppPath + "\\" + cppName;
 }
 
 void CompileWork::SetCompileResultPathName(const string &filePath, const string &fileName)
 {
 	this->compileResultPath = filePath;
 	this->compileResultName = fileName;
-	compileResultPathName = compileResultPath + compileResultName;
+	compileResultPathName = compileResultPath + "\\" + compileResultName;
 }
 
 void CompileWork::SetExePathNameResult(const string &filePath, const string &fileName, const string &resultFile)
@@ -114,8 +149,8 @@ void CompileWork::SetExePathNameResult(const string &filePath, const string &fil
 	this->exeName = fileName;
 	this->exeResult = resultFile;
 
-	exePathName = exePath + exeName;
-	exeResultPathName = exePath + exeResult;
+	exePathName = exePath + "\\" + exeName;
+	exeResultPathName = exePath + "\\" + exeResult;
 }
 
 int CompileWork::GetTextAreaValue()
@@ -135,9 +170,15 @@ int CompileWork::WriteCPPToFile()
 	if(file.is_open()){
 		file << textAreaValue.c_str();
 	}
+	else
+	{
+		//LOG("open file error");
+		MyLogInstance->WriteLog("open file error");
+		return RT_ERR_OPEN_FILE;
+	}
 	file.close();
-	MacToDos(cppPathName.c_str());
-	return RT_OK;
+	
+	return MacToDos(cppPathName.c_str());
 }
 int CompileWork::CompileCPP()
 {
@@ -155,6 +196,12 @@ int CompileWork::ReadCompileResult()
 	if(file.is_open()){
 		file >> compileInfo;
 	}
+	else
+	{
+		//LOG("open file error");
+		MyLogInstance->WriteLog("open file error");
+		return RT_ERR_OPEN_FILE;
+	}
 	file.close();
 
 	return RT_OK;
@@ -171,6 +218,12 @@ int CompileWork::ReadExecuteResult()
 	fstream file(exeResultPathName,ios::in);
 	if(file.is_open()){
 		file >> exeInfo;
+	}
+	else
+	{
+		LOG("open file error");
+		MyLogInstance->WriteLog("open file error");
+		return RT_ERR_OPEN_FILE;
 	}
 	file.close();
 

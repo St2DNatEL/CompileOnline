@@ -38,7 +38,7 @@ int MacToDos(const char *filePath)
     f=fopen(filePath,"rb+");
     if (NULL==f) {
         printf("Can not open file [%s]!\n",filePath);
-		return RT_ERR;
+		return RT_ERR_OPEN_FILE;
     }
     while (1) {
         c1=fgetc(f);
@@ -60,3 +60,25 @@ int MacToDos(const char *filePath)
     fclose(f);
 	return RT_OK;
 }
+
+string& ReplaceAll(string &orgStr, const string &toReplaceStr, const string &replaceStr)
+{
+	string tmp = "";
+	int begin = 0;
+	int pos = orgStr.find(toReplaceStr);
+	if(pos == -1)
+		return orgStr;
+	int toStrLen = toReplaceStr.length();
+	int repStrLen = replaceStr.length();
+
+	while(pos >= 0)
+	{
+		tmp += string(orgStr,begin,pos-begin);
+		tmp += replaceStr;
+		begin = pos + toStrLen;
+		pos = orgStr.find(toReplaceStr,begin);
+	}
+	orgStr = tmp + string(orgStr,begin);
+	return orgStr;
+}
+

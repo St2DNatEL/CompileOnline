@@ -39,6 +39,7 @@ private:
 	int ReadCompileResult();
 	int ExecuteEXE();
 	int ReadExecuteResult();
+	string ReturnSendBuf(const string &rtMsg);
 
 private:
 	RequestHttp *requestHttp;

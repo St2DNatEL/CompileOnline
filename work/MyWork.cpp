@@ -20,7 +20,8 @@ int MyWork::DoWork(const char * recvbuf,const int recvlen,string &sendbuf,int & 
 	RequestHttp myhttp;
 	myhttp.Parse((char*)recvbuf);
 	sendbuf += compile;
-	LOG(myhttp.GetMsgBody().c_str(), __FILE__, __LINE__);
+	LOG(myhttp.GetMsgBody().c_str());
+	MyLogInstance->WriteLog((myhttp.GetMsgBody()).c_str());
 	
 	string value = myhttp.GetQueryParamValue("text_code");
 	if(value != RT_INFO[RT_ERR])

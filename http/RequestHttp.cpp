@@ -28,8 +28,11 @@ int RequestHttp::Parse(const char *buf)
 		return rt;
 
 	ParseQueryString();
-	LOG(requestHead.c_str(),__FILE__,__LINE__);
-	LOG(msgHead.c_str(),__FILE__,__LINE__);
+	LOG(requestHead.c_str());
+	LOG(msgHead.c_str());
+
+	MyLogInstance->WriteLog(requestHead.c_str());
+	MyLogInstance->WriteLog(msgHead.c_str());
 
 	return RT_OK;
 }
@@ -39,7 +42,8 @@ int RequestHttp::ParseRequestHead()
 	int posHead = strBuf.find("\r\n");
 	if(posHead < 0)
 	{
-		LOG("RequestHttp::Parse error",__FILE__,__LINE__);
+		LOG("RequestHttp::Parse error");
+		MyLogInstance->WriteLog("RequestHttp::Parse error");
 		return RT_ERR;
 	}
 	requestHead = string(strBuf,0,posHead);
@@ -49,7 +53,8 @@ int RequestHttp::ParseRequestHead()
 
 	if(vc.capacity() < 3)
 	{
-		LOG("RequestHttp::ParseRequestHead error",__FILE__,__LINE__);
+		LOG("RequestHttp::ParseRequestHead error");
+		MyLogInstance->WriteLog("RequestHttp::ParseRequestHead error");
 		return RT_ERR_PARSE;
 	}
 	method = vc[0];
@@ -67,14 +72,16 @@ int RequestHttp::ParseMsgHead()
 	int msgHeadBegin = strBuf.find("\r\n");
 	if(msgHeadBegin < 0)
 	{
-		LOG("RequestHttp::ParseMsgHead error",__FILE__,__LINE__);
+		LOG("RequestHttp::ParseMsgHead error");
+		MyLogInstance->WriteLog("RequestHttp::ParseMsgHead error");
 		return RT_ERR;
 	}
 
 	int msgHeadEnd = strBuf.find("\r\n\r\n");
 	if(msgHeadEnd < 0)
 	{
-		LOG("RequestHttp::ParseMsgHead error",__FILE__,__LINE__);
+		LOG("RequestHttp::ParseMsgHead error");
+		MyLogInstance->WriteLog("RequestHttp::ParseMsgHead error");
 		return RT_ERR;
 	}
 

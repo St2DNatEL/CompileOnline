@@ -3,18 +3,21 @@
 #include "../work/Work.h"
 #include "../work/MyWork.h"
 #include "../work/WorkFactory.h"
-
+#include "../common/Log.h"
 
 int main()  
-{  
+{
+	MyLogInstance->Init("F:\\work_nc\\MyProject\\CompileOnline\\log\\server.log");
+
 	WorkFactory *workFactory = new WorkFactory;
 	Work *myWork  = workFactory->CreateWork(COMPILEWORK);
 
 	MySocket mySocket;
-	int rt = mySocket.InitSocket("0.0.0.0",8888);
+	int rt = mySocket.InitSocket("0.0.0.0",8898);
 	if(rt != RT_OK)
 	{
 		cout << RT_INFO[rt] << endl;
+		MyLogInstance->WriteLog(RT_INFO[rt].c_str());
 		return 0;
 	}
 
@@ -22,6 +25,7 @@ int main()
 	if(rt != RT_OK)
 	{
 		cout << RT_INFO[rt] << endl;
+		MyLogInstance->WriteLog(RT_INFO[rt].c_str());
 		return 0;
 	}
 
@@ -38,12 +42,3 @@ int main()
     return 0;  
 }  
 
-int main1()
-{
-	string str = "My name is xiong xian he1";
-	vector<string> vc;
-	Split(vc, str, "io");
-	for(int i = 0; i<vc.capacity(); i++)
-		cout << vc[i] << endl;
-	return 0;
-}

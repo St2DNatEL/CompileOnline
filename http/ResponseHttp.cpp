@@ -10,6 +10,7 @@ ResponseHttp::~ResponseHttp()
 
 void ResponseHttp::Init()
 {
+	mapMsgHead.clear();
 	mapMsgHead.insert(pair<string,string>("Server","xxh"));
 	mapMsgHead.insert(pair<string,string>("Content-Type","text/html"));
 	mapMsgHead.insert(pair<string,string>("Connection","close"));

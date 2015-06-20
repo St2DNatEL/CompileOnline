@@ -16,10 +16,13 @@
 #include <Winsock2.h>
 #include <string>
 #include <vector>
+#include "Log.h"
 
 using namespace std;
 
-#define LOG(msg,file,line) printf("%s:%d %s\n",file,line,msg)
+#define LOG(msg) printf("%s:%d %s\n",__FILE__,__LINE__,msg)
+
+//#define MyLogInstance Log::GetInstance(__FILE__,__LINE__)
 
 const int RCVBUFMAX = 102400;
 
@@ -33,6 +36,7 @@ enum RTIN
 	RT_ERR_LISTEN,
 	RT_ERR_DLL,
 	RT_ERR_PARSE,
+	RT_ERR_OPEN_FILE,
 
 	RT_NUM
 };
@@ -46,6 +50,7 @@ const string RT_INFO[RT_NUM] = {
 	"listen error",
 	"init dll error",
 	"parese error",
+	"open file error",
 };
 
 enum WORKTYPE
@@ -55,6 +60,8 @@ enum WORKTYPE
 };
 
 int Split(vector<string> &vc, const string &str, const string &sp);
+
+string& ReplaceAll(string &orgStr, const string &toReplaceStr, const string &replaceStr);
 
 int MacToDos(const char *filePath);
 
