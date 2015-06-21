@@ -24,7 +24,7 @@ using namespace std;
 
 //#define MyLogInstance Log::GetInstance(__FILE__,__LINE__)
 
-const int RCVBUFMAX = 102400;
+const int RCVBUFMAX = 409600;
 
 enum RTIN
 {
@@ -37,6 +37,7 @@ enum RTIN
 	RT_ERR_DLL,
 	RT_ERR_PARSE,
 	RT_ERR_OPEN_FILE,
+	RT_ERR_COMPILE,
 
 	RT_NUM
 };
@@ -51,6 +52,7 @@ const string RT_INFO[RT_NUM] = {
 	"init dll error",
 	"parese error",
 	"open file error",
+	"compile error",
 };
 
 enum WORKTYPE

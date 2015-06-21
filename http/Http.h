@@ -27,6 +27,7 @@ protected:
 
 	//ÇëÇóÍ·
 	string requestHead;
+	string uri;
 	string method;
 	string path;
 	string protocolVersoin;
@@ -40,6 +41,7 @@ protected:
 
 	//²éÑ¯×Ö·û´®
 	map<string, string> mapQueryString;
+	string getQueryString;
 };
 
 #endif

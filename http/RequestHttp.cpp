@@ -58,15 +58,43 @@ int RequestHttp::ParseRequestHead()
 		return RT_ERR_PARSE;
 	}
 	method = vc[0];
-	path = vc[1];
+	uri = vc[1];
 	protocolVersoin = vc[2];
+
+	ParsePathQueryString();
 	return RT_OK;
+}
+
+const string& RequestHttp::GetURI()
+{
+	return uri;
 }
 
 const string& RequestHttp::GetPath()
 {
 	return path;
 }
+
+int RequestHttp::ParsePathQueryString()
+{
+	if(uri.empty())
+	{
+		path = "";
+		getQueryString = "";
+		return RT_OK;
+	}
+	int pos = uri.find("?");
+	if(pos == -1)
+	{
+		path = uri;
+		getQueryString = "";
+		return RT_OK;
+	}
+	path = string(uri,0,pos);
+	getQueryString = string(uri,pos+1);
+	return RT_OK;
+}
+
 int RequestHttp::ParseMsgHead()
 {
 	int msgHeadBegin = strBuf.find("\r\n");
@@ -90,6 +118,7 @@ int RequestHttp::ParseMsgHead()
 }
 int RequestHttp::ParseMsgHeadContent()
 {
+	mapMsgHead.clear();
 	int pos = msgHead.find("\r\n");
 	int beginFind = 0;
 	int lineLen = pos - beginFind;
@@ -141,21 +170,32 @@ const string& RequestHttp::GetMsgHeadParamValue(const string &param)
 
 int RequestHttp::ParseQueryString()
 {
-	if(method == "POST")
+	mapQueryString.clear();
+	string tmp = "";
+	if(getQueryString.empty() && msgBody.empty())
 	{
-		vector<string> vc;
-		
-		Split(vc,msgBody,"&");
-		for(vector<string>::iterator it=vc.begin(); it != vc.end();it++)
+		return RT_OK;
+	}
+	else if(getQueryString.empty())
+		tmp = msgBody;
+	else if(msgBody.empty())
+		tmp = getQueryString;
+	else 
+		tmp = getQueryString + "&" + msgBody;
+	
+	vector<string> vc;
+	
+	Split(vc,tmp,"&");
+	for(vector<string>::iterator it=vc.begin(); it != vc.end();it++)
+	{
+		vector<string> vcparam;
+		Split(vcparam, *it, "=");
+		if(vcparam.capacity() == 2)
 		{
-			vector<string> vcparam;
-			Split(vcparam, *it, "=");
-			if(vcparam.capacity() == 2)
-			{
-				mapQueryString.insert(pair<string,string>(vcparam[0],vcparam[1]));
-			}
+			mapQueryString.insert(pair<string,string>(vcparam[0],vcparam[1]));
 		}
 	}
+
 	return RT_OK;
 }
 

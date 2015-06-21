@@ -23,6 +23,7 @@ public:
 	const string& GetMethod();
 	const string& GetMsgHeadParamValue(const string &param);
 	const string& GetPath();
+	const string& GetURI();
 
 	const string& GetQueryParamValue(const string &param);
 	const string& GetClientIP();
@@ -35,6 +36,7 @@ private:
 	int ParseMsgHeadContent();
 	int ParseMsgBody();
 	int ParseQueryString();
+	int ParsePathQueryString();
 };
 
 

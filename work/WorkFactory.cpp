@@ -19,5 +19,6 @@ Work*WorkFactory::CreateWork(WORKTYPE worktype)
 	default:
 		LOG("not suppport");
 		MyLogInstance->WriteLog("not suppport");
+		return NULL;
 	}
 }

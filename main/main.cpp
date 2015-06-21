@@ -13,7 +13,7 @@ int main()
 	Work *myWork  = workFactory->CreateWork(COMPILEWORK);
 
 	MySocket mySocket;
-	int rt = mySocket.InitSocket("0.0.0.0",8898);
+	int rt = mySocket.InitSocket("0.0.0.0",8888);
 	if(rt != RT_OK)
 	{
 		cout << RT_INFO[rt] << endl;

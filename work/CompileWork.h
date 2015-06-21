@@ -19,6 +19,7 @@
 const string COMPILEEXE = "E:\\vs2012\\VC\\bin\\cl.exe";
 const string COMPILEEVN = "E:\\vs2012\\Common7\\Tools\\vsvars32.bat";
 const string TEXTAREANAME = "text_code";
+const string COMPILEWOKRDIR = "F:\\work_nc\\MyProject\\CompileOnline\\html\\";
 
 class CompileWork : public Work
 {
@@ -39,7 +40,10 @@ private:
 	int ReadCompileResult();
 	int ExecuteEXE();
 	int ReadExecuteResult();
-	string ReturnSendBuf(const string &rtMsg);
+	string ResponseSendBuf(const string &rtMsg);
+	int ResponseStaticPage(string &respMsg);
+	string ResponseNotFind(string &respMsg);
+	int DoCompile(string &);
 
 private:
 	RequestHttp *requestHttp;

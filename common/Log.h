@@ -19,7 +19,7 @@ using namespace std;
 
 #define MyLogInstance Log::GetInstance(__FILE__,__LINE__)
 
-const int LOGBUFSIZE = 20480;
+const int LOGBUFSIZE = 204800;
 
 class Log
 {

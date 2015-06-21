@@ -2,35 +2,6 @@
 #include "../Http/RequestHttp.h"
 #include <fstream>
 
-#define HTML "<!DOCTYPE html> <html> <head> \
-	<title>在线编译</title> \
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>\
-	 <!-- Bootstrap --> <link rel='stylesheet' href='http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css'> \
-	<script src='http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js'></script> \
-	<script src='http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js'> \
-	</script> <script src='/js/jquery.form.js'></script> <script> $(function() { \
-	$('#form_code').ajaxForm({ dataType: 'text', //data: $('#form_code').serialize(), beforeSubmit: showRequest, success: showResponse }) }); \
-	function showRequest(formData, jqForm, options) { } function showResponse(responseText, statusText) { alert('OK'); } </script> </head> \
-	<body> <div class='container'> <p><h2>目前系统仅支持c/c++代码，我们会拼命努力健全这个系统的^_^</h2></p> \
-	<form id='form_code' name='form_code' class='form-horizontal' action='/test' method='post'> \
-	<textarea id='text_code' name='text_code' class='form-control' rows='10'>%s</textarea> </br> \
-	<input id='btn_code' type='submit' class='btn btn-primary' value='提 交'></button> </form> \
-	</br><div style='border:1px'><p><h3>结果为：<h3></p>%s</div> \
-	</div> </body> </html>"
-
-/*#define HTML "<!DOCTYPE html> <html> <head> \
-	<title>在线编译</title> \
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>\
-	 <script> $(function() { \
-	$('#form_code').ajaxForm({ dataType: 'text', //data: $('#form_code').serialize(), beforeSubmit: showRequest, success: showResponse }) }); \
-	function showRequest(formData, jqForm, options) { } function showResponse(responseText, statusText) { alert('OK'); } </script> </head> \
-	<body> <div class='container'> <p><h2>目前系统仅支持c/c++代码，我们会拼命努力健全这个系统的^_^</h2></p> \
-	<form id='form_code' name='form_code' class='form-horizontal' action='/test' method='post'> \
-	<textarea id='text_code' name='text_code' class='form-control' rows='10'>%s</textarea> </br> \
-	<input id='btn_code' type='submit' class='btn btn-primary' value='提 交'></button> </form> \
-	</br><div style='border:1px'><p><h3>结果为：<h3></p>%s</div> \
-	</div> </body> </html>"*/
-
 CompileWork::CompileWork()
 {
 	this->cppPath = "F://";
@@ -59,69 +30,128 @@ CompileWork::~CompileWork()
 	delete responseHttp;
 }
 
-int CompileWork::DoWork(const char *recvbuf, const int recvlen, string &sendbuf, int &sendlen)
+int CompileWork::ResponseStaticPage(string &respMsg)
 {
-	responseHttp->Init();
-	requestHttp->Parse(recvbuf);
+	char buf[255] = {0};
+	char bf;
+	string tmp = "";
+	respMsg = "";
+	string path = requestHttp->GetPath();
+	if(path.empty() || path == "/")
+	{
+		path = "index.html";
+	}
 
+	int dotpos = path.rfind(".");
+	if(dotpos >= 0)
+	{
+		string suffix = string(path,dotpos+1);
+		if(suffix == "css")
+			responseHttp->SetMsgHead("Content-Type","text/css");
+		else if(suffix == "js")
+			responseHttp->SetMsgHead("Content-Type","application/x-javascript; charset=utf-8");
+	}
+	string dir = COMPILEWOKRDIR + path;
+	fstream tmpFile(dir,ios::in | ios::_Nocreate);
+	if(tmpFile.is_open())
+	{
+		while(tmpFile.get(bf))
+		{
+			respMsg += bf;
+		}
+	}
+	else
+	{
+		responseHttp->SetStatus("404 Not Found");
+		respMsg = "";
+	}
+	tmpFile.close();
+
+	responseHttp->SetMsgBody(respMsg);
+	respMsg = responseHttp->ResponseContent();
+
+	return RT_OK;
+	
+}
+
+int CompileWork::DoCompile(string &sendbuf)
+{
 	if(GetTextAreaValue() != RT_OK)
 	{
-		sendbuf = ReturnSendBuf("");
+		sendbuf = ResponseSendBuf("");
 		return RT_OK;
 	}
 	
 	int rt = WriteCPPToFile();
 	if(rt != RT_OK)
 	{
-		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		sendbuf = ResponseSendBuf("服务器暂时不能为您提供服务");
 		return RT_OK;
 	}
 
 	rt = CompileCPP();
 	if(rt != RT_OK)
 	{
-		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		sendbuf = ResponseSendBuf("服务器暂时不能为您提供服务");
 		return RT_OK;
 	}
 
 	rt = ReadCompileResult();
-	if(rt != RT_OK)
+	if(rt == RT_ERR_COMPILE)
 	{
-		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		sendbuf = ResponseSendBuf("<font color='red'>"+compileInfo+"</font>");
+		return RT_OK;
+	}
+	else if(rt != RT_OK)
+	{
+		sendbuf = ResponseSendBuf("服务器暂时不能为您提供服务");
 		return RT_OK;
 	}
 
 	rt = ExecuteEXE();
 	if(rt != RT_OK)
 	{
-		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		sendbuf = ResponseSendBuf("服务器暂时不能为您提供服务");
 		return RT_OK;
 	}
 
 	rt = ReadExecuteResult();
 	if(rt != RT_OK)
 	{
-		sendbuf = ReturnSendBuf("服务器暂时不能为您提供服务");
+		sendbuf = ResponseSendBuf("服务器暂时不能为您提供服务");
 		return RT_OK;
 	}
 
-	sendbuf = ReturnSendBuf(exeInfo);
+	sendbuf = ResponseSendBuf(exeInfo);
+
+}
+
+int CompileWork::DoWork(const char *recvbuf, const int recvlen, string &sendbuf, int &sendlen)
+{
+	cout << "\n\n" << recvbuf << "\n\n";
+	MyLogInstance->WriteLog(recvbuf);
+
+	responseHttp->Init();
+	requestHttp->Parse(recvbuf);
+
+	string path = requestHttp->GetPath();
+	int endpos = path.rfind("/");
+	string cmp = string(path,endpos+1);
+	if(cmp == "compile")
+	{
+		DoCompile(sendbuf);
+		return RT_OK;
+	}
+
+	
+	ResponseStaticPage(sendbuf);
 	return RT_OK;
 }
 
-string CompileWork::ReturnSendBuf(const string &rtMsg)
+string CompileWork::ResponseSendBuf(const string &rtMsg)
 {
-	//todo: Restruct it 
-	char rtchar[2048] = {0};
 	string rtstr;
-	
-	string rtTXT = textAreaValue;
-	rtTXT = ReplaceAll(rtTXT,"<","&lt;");
-	rtTXT = ReplaceAll(rtTXT,">","&gt;");
-	
-	sprintf(rtchar, HTML, rtTXT.c_str(), rtMsg.c_str());
-	responseHttp->SetMsgBody(string(rtchar));
-	
+	responseHttp->SetMsgBody(rtMsg);
 	rtstr = responseHttp->ResponseContent();
 
 	cout << "\n\n" << rtstr << "\n\n";
@@ -192,9 +222,12 @@ int CompileWork::CompileCPP()
 }
 int CompileWork::ReadCompileResult()
 {
+	compileInfo="";
+	char bf;
 	fstream file(compileResultPathName,ios::in);
 	if(file.is_open()){
-		file >> compileInfo;
+		while(file.get(bf))
+			compileInfo += bf;
 	}
 	else
 	{
@@ -204,6 +237,12 @@ int CompileWork::ReadCompileResult()
 	}
 	file.close();
 
+	int ps = compileInfo.find("err");
+	if( ps >=0)
+	{
+		cout << endl << "ERR:" << compileInfo << endl;
+		return RT_ERR_COMPILE;
+	}
 	return RT_OK;
 }
 int CompileWork::ExecuteEXE()
@@ -215,9 +254,12 @@ int CompileWork::ExecuteEXE()
 }
 int CompileWork::ReadExecuteResult()
 {
+	exeInfo = "";
+	char bf;
 	fstream file(exeResultPathName,ios::in);
 	if(file.is_open()){
-		file >> exeInfo;
+		while(file.get(bf))
+			exeInfo += bf;
 	}
 	else
 	{
