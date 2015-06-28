@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>在线编译</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/jumbotron-narrow.css">
+	<link rel="stylesheet" href="/css/docs.min.css">
+	<link type="text/css" rel="stylesheet" media="all" href="/css/load.css">
+
+    <script src="/js/jquery.min.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+	
+	<script src="/js/jquery.form.js"></script>
+	
+	<script>
+		$(document).ready(function(){ 
+		　　$('#div_hide').hide();
+		}); 
+
+		$(function() {
+			$('#form_code').ajaxForm({
+				dataType: "text",
+				//data: $('#form_code').serialize(),
+				beforeSubmit: showRequest,
+				success: showResponse
+			})
+		
+		});
+		
+		function showRequest(formData, jqForm, options) {
+			$('#div_hide').show();
+			$('#text_code').attr("disabled",true);
+		}
+		
+		function showResponse(responseText, statusText) {
+			$('#p_result').html(responseText);
+			$('#div_hide').hide();
+			$('#text_code').attr("disabled",false);
+		}
+	</script>
+	
+</head>
+
+<body>
+	<div class="container">
+		<div class="loadbox">
+		  <div class="order_load indexLoad">
+			<div id="div_hide" class="loading32">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			  <div class="bar4"></div>
+			  <div class="bar5"></div>
+			  <div class="bar6"></div>
+			  <div class="bar7"></div>
+			  <div class="bar8"></div>
+			</div>
+		  </div>
+		  </div>
+		  
+		<div class="header clearfix">
+        <nav>
+        </nav>
+        <h3 class="text-muted">目前系统仅支持c/c++代码，我们会拼命努力健全这个系统的^_^</h3>
+      </div>
+	  <div >
+        <form id="form_code" name="form_code" class="form-horizontal" action="/compile" method="post">
+			<textarea id="text_code" name="text_code" class="form-control" rows="15" placeholder="请输入源码"></textarea>
+			<p></p>
+			<input id="btn_code" type="submit" class="btn btn-primary" value="提 交"></button>
+		</form>
+      </div>
+	  </br>
+	  <div class="highlight brand-danger">
+	  <samp id="p_result">This text is meant to be treated as sample output from a computer program.</samp>
+	  </div>
+	  <p></p>
+	  <footer class="footer">
+        <p class="text-center bg-info">&copy; 天朝嵌入式@版权所有 qq群：233718417</p>
+      </footer>
+	</div>
+	
+</body>
+
+</html>

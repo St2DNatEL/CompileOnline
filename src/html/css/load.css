@@ -1,0 +1,121 @@
+
+#pageLoad {
+	background: #000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 998;
+}
+.waiting .loading32{ top:auto; bottom:133px; margin-top:0px;}
+.order_load {
+	backface-visibility: hidden;
+	display: inline-block;
+	position: absolute;
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 999;
+	left: 50%;
+}
+.loading32 {
+	margin: 0 auto;
+	top: 50%;
+	margin-top: -30px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	-webkit-border-radius: 100px;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-name: rotateThis16;
+	-moz-border-radius: 100px;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-moz-animation-name: rotateThis16;
+}
+@-webkit-keyframes rotateThis16 {
+ from {
+-webkit-transform: scale(0.32) rotate(0deg);
+}
+to {
+	-webkit-transform: scale(0.32) rotate(360deg);
+}
+}
+@-moz-keyframes rotateThis16 {
+ from {
+-moz-transform: scale(0.32) rotate(0deg);
+}
+to {
+	-moz-transform: scale(0.32) rotate(360deg);
+}
+}
+.loading32>div {
+	width: 16px;
+	height: 16px;
+	background-color: #666;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	position: absolute;
+	left: 42px;
+	top: 42px;
+}
+.bar1 {
+	opacity: 0.3;
+	-webkit-transform: rotate(0deg) translate(0, -42px);
+	-moz-transform: rotate(0deg) translate(0, -42px);
+}
+.bar2 {
+	opacity: 0.4;
+	-webkit-transform: rotate(45deg) translate(0, -42px);
+	-moz-transform: rotate(45deg) translate(0, -42px);
+}
+.bar3 {
+	opacity: 0.5;
+	-webkit-transform: rotate(90deg) translate(0, -42px);
+	-moz-transform: rotate(90deg) translate(0, -42px);
+}
+.bar4 {
+	opacity: 0.6;
+	-webkit-transform: rotate(135deg) translate(0, -42px);
+	-moz-transform: rotate(135deg) translate(0, -42px);
+}
+.bar5 {
+	opacity: 0.7;
+	-webkit-transform: rotate(180deg) translate(0, -42px);
+	-moz-transform: rotate(180deg) translate(0, -42px);
+}
+.bar6 {
+	opacity: 0.8;
+	-webkit-transform: rotate(225deg) translate(0, -42px);
+	-moz-transform: rotate(225deg) translate(0, -42px);
+}
+.bar7 {
+	opacity: 0.9;
+	-webkit-transform: rotate(270deg) translate(0, -42px);
+	-moz-transform: rotate(270deg) translate(0, -42px);
+}
+.bar8 {
+	opacity: 1;
+	-webkit-transform: rotate(315deg) translate(0, -42px);
+	-moz-transform: rotate(315deg) translate(0, -42px);
+}
+.hide {
+	display: none;
+}
+.shadowDetail .order_load {
+	top: 45%;
+}
+.indexShowTime {
+	text-align: center;
+}
+.showBoxIndex #numdata {
+	max-width: 650px;
+	margin: 0px auto;
+}
+.indexLoad{ top:32%;}

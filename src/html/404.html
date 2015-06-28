@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>在线编译</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/jumbotron-narrow.css">
+	<link rel="stylesheet" href="/css/docs.min.css">
+
+    <script src="/js/jquery.min.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+	
+	<script src="/js/jquery.form.js"></script>
+	
+	<script>
+		$(function() {
+			$('#form_code').ajaxForm({
+				dataType: "text",
+				//data: $('#form_code').serialize(),
+				beforeSubmit: showRequest,
+				success: showResponse
+			})
+		
+		});
+		
+		function showRequest(formData, jqForm, options) {
+		}
+		
+		function showResponse(responseText, statusText) {
+			//alert(responseText);
+			$('#p_result').html(responseText);
+		}
+	</script>
+	
+</head>
+
+<body>
+	<div class="container">
+		
+	  <div >
+        <div class="jumbotron">
+        <h1>404, I am so Sorry, You cant find me! </h1>
+        
+		</div>
+      </div>
+	  </br>
+	  <div id="p_result" class="brand-danger">
+	  <a href="/">>> 返回主页</a>
+	  </div>
+	  <p></p>
+	  <footer class="footer">
+        <p class="text-center bg-info">&copy; 天朝嵌入式@版权所有 qq群：233718417</p>
+      </footer>
+	</div>
+
+</body>
+
+</html>
