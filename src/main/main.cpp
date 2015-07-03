@@ -9,7 +9,7 @@
 int main()  
 {
 	printf("load config file ...\n");
-	Config::GetInstance()->Init("F:\\work_nc\\MyProject\\CompileOnline\\conf\\config.conf");
+	Config::GetInstance()->Init("../conf/config.conf");
 	Config::GetInstance()->Test();
 	printf("load config file success\n");
 	
@@ -50,4 +50,3 @@ int main()
     system("pause");  
     return 0;  
 }  
-

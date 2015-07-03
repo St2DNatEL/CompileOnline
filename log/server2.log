@@ -1,4 +1,4 @@
-[2015-06-28 20:47:36][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET / HTTP/1.1
+[2015-07-02 10:08:34][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET / HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
@@ -7,15 +7,32 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:36][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
-[2015-06-28 20:47:36][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:34][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:08:34][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:36][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET / HTTP/1.1
+Host: 127.0.0.1:8888
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /css/bootstrap.min.css HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/css,*/*;q=0.1
@@ -25,8 +42,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:36][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
-[2015-06-28 20:47:36][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/css,*/*;q=0.1
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -34,26 +51,7 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /css/jumbotron-narrow.css HTTP/1.1
-Host: 127.0.0.1:8888
-Connection: keep-alive
-Accept: text/css,*/*;q=0.1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
-Referer: http://127.0.0.1:8888/
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
-
-
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
-Connection: keep-alive
-Accept: text/css,*/*;q=0.1
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
-Referer: http://127.0.0.1:8888/
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
-
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /css/jumbotron-narrow.css HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/css,*/*;q=0.1
@@ -63,8 +61,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/css,*/*;q=0.1
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -72,7 +70,7 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /css/load.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /css/docs.min.css HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/css,*/*;q=0.1
@@ -82,8 +80,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: text/css,*/*;q=0.1
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -91,7 +89,26 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /css/load.css HTTP/1.1
+Host: 127.0.0.1:8888
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:8888/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:8888/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /js/jquery.min.js HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: */*
@@ -101,8 +118,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:08:35][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: */*
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -110,7 +127,7 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /js/bootstrap.min.js HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: */*
@@ -120,8 +137,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: */*
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -129,7 +146,7 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /js/jquery.form.js HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: */*
@@ -139,8 +156,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 Accept: */*
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -148,7 +165,7 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] GET /favicon.ico HTTP/1.1
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET /favicon.ico HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
@@ -158,8 +175,8 @@ Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
 
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /favicon.ico HTTP/1.1
-[2015-06-28 20:47:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET /favicon.ico HTTP/1.1
+[2015-07-02 10:08:36][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
 Connection: keep-alive
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
 Accept: */*
@@ -167,34 +184,1048 @@ Referer: http://127.0.0.1:8888/
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:47][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:163] POST /compile HTTP/1.1
+[2015-07-02 10:09:03][c:\users\administrator\downloads\compileonline-master\src\work\compile_work.cpp:163] GET / HTTP/1.1
 Host: 127.0.0.1:8888
 Connection: keep-alive
-Content-Length: 34
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:09:03][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:09:03][c:\users\administrator\downloads\compileonline-master\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:28][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET / HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:28][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:27:28][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/bootstrap.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/jumbotron-narrow.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/docs.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/load.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:27:40][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/bootstrap.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.form.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept: */*
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /favicon.ico HTTP/1.1
+[2015-07-02 10:27:41][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept: */*
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET / HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/bootstrap.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/jumbotron-narrow.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/docs.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:31:06][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/load.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/bootstrap.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.form.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:31:07][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:31:11][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
 Accept: text/plain, */*; q=0.01
-Origin: http://127.0.0.1:8888
+Origin: http://127.0.0.1:9999
 X-Requested-With: XMLHttpRequest
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
 Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-Referer: http://127.0.0.1:8888/
+Referer: http://127.0.0.1:9999/
 Accept-Encoding: gzip, deflate
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-text_code=             2127251466nclude+stdio.h5.121811E+303
-[2015-06-28 20:47:47][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
-[2015-06-28 20:47:47][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:8888
+text_code=
+[2015-07-02 10:31:11][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:31:11][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
 Connection: keep-alive
-Content-Length: 34
+Content-Length: 13
 Accept: text/plain, */*; q=0.01
-Origin: http://127.0.0.1:8888
+Origin: http://127.0.0.1:9999
 X-Requested-With: XMLHttpRequest
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
 Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-Referer: http://127.0.0.1:8888/
+Referer: http://127.0.0.1:9999/
 Accept-Encoding: gzip, deflate
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
 
-[2015-06-28 20:47:49][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:214] 
+[2015-07-02 10:32:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET / HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:32:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:37][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET / HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:32:37][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/bootstrap.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/jumbotron-narrow.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/docs.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/load.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/bootstrap.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:32:38][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:32:39][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.form.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:32:39][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:32:39][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:33:00][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 11
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+text_code=3
+[2015-07-02 10:33:04][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:33:04][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 11
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:33:35][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 0
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:33:39][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:33:39][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 0
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:34:31][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:215] 
+HTTP/1.1 200 OK
+Cache-Control: no-cache 
+Connection: close 
+Content-Length: 42 
+Content-Type: text/html;charset=GB2312 
+Server: xxh 
+
+<font color='red'>please input code</font>
+
+[2015-07-02 10:34:53][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+text_code=
+[2015-07-02 10:34:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:34:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET / HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/bootstrap.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/jumbotron-narrow.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/docs.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/load.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
+[2015-07-02 10:37:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/bootstrap.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.form.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:37:53][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:37:56][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+text_code=
+[2015-07-02 10:37:56][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:37:56][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET / HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET / HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/bootstrap.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/bootstrap.min.css HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/jumbotron-narrow.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/jumbotron-narrow.css HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/docs.min.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/docs.min.css HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /css/load.css HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /css/load.css HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.min.js HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/bootstrap.min.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/bootstrap.min.js HTTP/1.1
+[2015-07-02 10:38:25][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:26][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] GET /js/jquery.form.js HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+
+[2015-07-02 10:38:26][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] GET /js/jquery.form.js HTTP/1.1
+[2015-07-02 10:38:26][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:29][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+text_code=
+[2015-07-02 10:38:29][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:38:29][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 13
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:31][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:215] 
 HTTP/1.1 200 OK
 Cache-Control: no-cache 
 Connection: close 
@@ -203,4 +1234,42 @@ Content-Type: text/html;charset=GB2312
 Server: xxh 
 
 <font color='red'>error LNK1561: 必须定义入口点</br></font>
+
+[2015-07-02 10:38:52][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:164] POST /compile HTTP/1.1
+Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 100
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+text_code=             1051803832nclude+stdio.h5.121811E+303-0X1.CCCCCDP+205int+main()-0X1.CCCCCDP+205B-0X1.CCCCCDP+205printf(              ccccccccxxn)B-0X1.CCCCCDP+205return+0B-0X1.CCCCCDP+205D
+[2015-07-02 10:38:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:34] POST /compile HTTP/1.1
+[2015-07-02 10:38:52][f:\work_nc\myproject\compileonline\src\http\request_http.cpp:35] Host: 127.0.0.1:9999
+Connection: keep-alive
+Content-Length: 100
+Accept: text/plain, */*; q=0.01
+Origin: http://127.0.0.1:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://127.0.0.1:9999/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+
+[2015-07-02 10:38:57][f:\work_nc\myproject\compileonline\src\work\compile_work.cpp:215] 
+HTTP/1.1 200 OK
+Cache-Control: no-cache 
+Connection: close 
+Content-Length: 4 
+Content-Type: text/html;charset=GB2312 
+Server: xxh 
+
+xxx
+
 

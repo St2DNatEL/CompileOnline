@@ -1,5 +1,6 @@
 #include "log.h"
 #include <time.h>
+#include <memory.h>
 
 Log* Log::instance = NULL;
 fstream Log::file;
@@ -37,7 +38,7 @@ Log* Log::GetInstance(const char *fl, int line)
 void Log::Init(const string &logFile)
 {
 	Log::logFile = logFile;
-	file.open(logFile,ios::out|ios::app);
+	file.open(logFile.c_str(),ios::out|ios::app);
 }
 
 int Log::WriteLog(const char *fmt, ...)

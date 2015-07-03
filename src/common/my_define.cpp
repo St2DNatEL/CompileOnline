@@ -2,7 +2,7 @@
 
 int Split(vector<string> &vc, const string &str, const string &sp)
 {
-	string tmp;
+	std::string tmp;
 	int strlen = str.length();
 	int j = 0;
 	for(int i = 0; i < strlen; i++)
@@ -17,7 +17,9 @@ int Split(vector<string> &vc, const string &str, const string &sp)
 			}
 			if(j == sp.length())
 			{
-				tmp.pop_back();
+				//tmp.pop_back();
+				tmp.erase(tmp.length()-1);
+				//tmp[tmp.length()-1] = '\0';
 				vc.push_back(tmp);
 				tmp.clear();
 				i += j-1;

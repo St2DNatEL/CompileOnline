@@ -12,13 +12,29 @@
 */
 
 #include <iostream>  
-#include <cstdio>  
-#include <Winsock2.h>
+#include <cstdio>
 #include <string>
 #include <vector>
+
+#include <stdlib.h>
+#include <string.h>
+
 #include "log.h"
 
 using namespace std;
+
+#ifdef __XXHLINUX__
+#define __LINUX__
+#endif
+
+#ifdef __XXHWIN__
+#define __WIN__
+#endif
+
+#ifdef __LINUX__
+#define _Nocreate out
+#endif
+
 
 #define LOG(msg) printf("%s:%d %s\n",__FILE__,__LINE__,msg)
 

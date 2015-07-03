@@ -4,6 +4,7 @@
 #include "my_define.h"
 #include <map>
 
+
 const int kTempBufferMax = 1024;
 
 class Config
@@ -11,7 +12,7 @@ class Config
 private:
 	Config(){}
 	~Config(){}
-	Config& operator=(const Config& rhs){};
+	Config& operator=(const Config& rhs){ return *this;};
 
 public:
 	static Config* GetInstance();

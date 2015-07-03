@@ -1,4 +1,5 @@
 #include "config.h"
+#include <cstdlib>
 #include <fstream>
 
 Config* Config::config_ = NULL;
@@ -25,7 +26,11 @@ string Config::GetValue(const string &param)
 
 int Config::ReadFile()
 {
+#ifdef __LINUX__
+	fstream fs(filename_.c_str(), ios::in);
+#else
 	fstream fs(filename_, ios::_Nocreate);
+#endif
 	if(!fs)
 	{
 		printf("error: Config::ParseConfig open file failed\n");

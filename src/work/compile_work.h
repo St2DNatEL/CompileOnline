@@ -13,8 +13,9 @@
 
 #include "work.h"
 #include "../common/my_define.h"
-#include "../Http/request_http.h"
-#include "../Http/response_http.h"
+#include "../http/request_http.h"
+#include "../http/response_http.h"
+
 
 const string COMPILEEXE = "E:\\vs2012\\VC\\bin\\cl.exe";
 const string COMPILEEVN = "E:\\vs2012\\Common7\\Tools\\vsvars32.bat";

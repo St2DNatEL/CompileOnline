@@ -1,7 +1,7 @@
 #include "compile_work.h"
-#include "../Http/request_http.h"
 #include "../common/config.h"
 #include <fstream>
+#include <cstdlib>
 
 CompileWork::CompileWork()
 {
@@ -55,7 +55,7 @@ int CompileWork::ResponseStaticPage(string &respMsg)
 	if(compileworkdir.empty())
 		compileworkdir = COMPILEWOKRDIR;
 	string dir = compileworkdir + path;
-	fstream tmpFile(dir,ios::in | ios::_Nocreate);
+	fstream tmpFile(dir.c_str(),ios::in | ios::_Nocreate);
 	if(tmpFile.is_open())
 	{
 		while(tmpFile.get(bf))
@@ -83,7 +83,7 @@ int CompileWork::ResponseNotFound(string &respMsg)
 	string dir = compileworkdir + "404.html";
 	responseHttp->SetStatus("404 Not Found");
 	respMsg = "404 not Found";
-	fstream tmpFile(dir,ios::in | ios::_Nocreate);
+	fstream tmpFile(dir.c_str(),ios::in | ios::_Nocreate);
 	if(tmpFile.is_open())
 	{
 		respMsg = "";
@@ -98,7 +98,11 @@ int CompileWork::ResponseNotFound(string &respMsg)
 }
 int CompileWork::DoCompile(string &sendbuf)
 {
+#ifdef __LINUX__
+	responseHttp->SetMsgHead("Content-Type","text/html;charset=utf-8");
+#else
 	responseHttp->SetMsgHead("Content-Type","text/html;charset=GB2312");
+#endif
 	responseHttp->SetMsgHead("Cache-Control","no-cache");
 
 	if(GetTextAreaValue() != RT_OK)
@@ -171,6 +175,9 @@ int CompileWork::DoWork(const char *recvbuf, const int recvlen, string &sendbuf,
 	if(cmp == "compile")
 	{
 		DoCompile(sendbuf);
+		//responseHttp->SetMsgHead("Content-Type","text/html; charset=GB2312");
+		//responseHttp->SetMsgBody("<font color='red'>不和你玩了，我要休息了 ^_^</br>可加入 qq群讨论:233718417</font");
+		//sendbuf = responseHttp->ResponseContent();
 		return RT_OK;
 	}
 	else if(cmp == "tb")
@@ -221,7 +228,7 @@ void CompileWork::SetCppPathName(const string &cppPath, const string &cppName)
 	this->cppName = cppName;
 	if(this->cppName.empty())
 		this->cppName = "compile.cpp";
-	cppPathName = cppPath + "\\" + this->cppName;
+	cppPathName = cppPath + "/" + this->cppName;
 }
 
 void CompileWork::SetCompileResultPathName(const string &filePath, const string &fileName)
@@ -230,7 +237,7 @@ void CompileWork::SetCompileResultPathName(const string &filePath, const string 
 	this->compileResultName = fileName;
 	if(this->compileResultName.empty())
 		this->compileResultName = "compile.rs";
-	compileResultPathName = compileResultPath + "\\" + this->compileResultName;
+	compileResultPathName = compileResultPath + "/" + this->compileResultName;
 }
 
 void CompileWork::SetExePathNameResult(const string &filePath, const string &fileName, const string &resultFile)
@@ -243,14 +250,14 @@ void CompileWork::SetExePathNameResult(const string &filePath, const string &fil
 	if(this->exeResult.empty())
 		this->exeResult = "exe.rs";
 
-	exePathName = exePath + "\\" + exeName;
-	exeResultPathName = exePath + "\\" + exeResult;
+	exePathName = exePath + "/" + exeName;
+	exeResultPathName = exePath + "/" + exeResult;
 }
 
 int CompileWork::DetectionTextArea()
 {
 	string filter[] = {"system","System","thread","fork", "new","sleep",
-								"Sleep","Window","window","while(1)"};
+								"Sleep","Window","window","while","for","malloc"};
 	int num = sizeof(filter)/sizeof(string); // Maybe not safe
 	for(int i = 0; i < num; i++)
 	{
@@ -277,7 +284,7 @@ int CompileWork::GetTextAreaValue()
 }
 int CompileWork::WriteCPPToFile()
 {
-	fstream file(cppPathName,ios::out);
+	fstream file(cppPathName.c_str(),ios::out);
 	if(file.is_open()){
 		file << textAreaValue.c_str();
 	}
@@ -293,15 +300,15 @@ int CompileWork::WriteCPPToFile()
 }
 int CompileWork::CompileCPP()
 {
-	string compileenv = Config::GetInstance()->GetValue("COMPILEEVN");
-	if(compileenv.empty())
-		compileenv = COMPILEEVN;
-	system(COMPILEEVN.c_str());
+	//string compileenv = Config::GetInstance()->GetValue("COMPILEEVN");
+	//if(compileenv.empty())
+	//	compileenv = COMPILEEVN;
+	//system(COMPILEEVN.c_str());
 
 	string compileexe = Config::GetInstance()->GetValue("COMPILEEXE");
 	if(compileexe.empty())
 		compileexe = COMPILEEXE;
-	string cmp = compileexe + " -o " + exePathName + " " + cppPathName + " > " + compileResultPathName;
+	string cmp = compileexe + " -o " + exePathName + " " + cppPathName + " > " + compileResultPathName + " 2>&1";
 	system(cmp.c_str());
 	
 
@@ -313,7 +320,7 @@ int CompileWork::ReadCompileResult()
 	compileInfo="";
 	char bf;
 	char linebuf[255];
-	fstream file(compileResultPathName,ios::in);
+	fstream file(compileResultPathName.c_str(),ios::in);
 	if(file.is_open()){
 		while(file.getline(linebuf,255))
 		{
@@ -322,6 +329,15 @@ int CompileWork::ReadCompileResult()
 			{
 				error = 1;
 				compileInfo += string(linebuf,pos,-1) + "</br>";
+			}
+			else
+			{
+				pos = string(linebuf).find("undefined");
+				if(pos >= 0)
+				{
+					error = 1;
+					compileInfo += string(linebuf,pos,-1) + "</br>";
+				}
 			}
 		}
 	}
@@ -342,7 +358,7 @@ int CompileWork::ReadCompileResult()
 }
 int CompileWork::ExecuteEXE()
 {
-	string exe = exePathName + " > " + exeResultPathName;
+	string exe = exePathName + " > " + exeResultPathName + " 2>&1";
 	system(exe.c_str());
 
 	return RT_OK;
@@ -351,10 +367,15 @@ int CompileWork::ReadExecuteResult()
 {
 	exeInfo = "";
 	char bf;
-	fstream file(exeResultPathName,ios::in);
+	fstream file(exeResultPathName.c_str(),ios::in);
 	if(file.is_open()){
 		while(file.get(bf))
-			exeInfo += bf;
+		{
+			if(bf == '\n')
+				exeInfo += "</br>";
+			else
+				exeInfo += bf;
+		}
 	}
 	else
 	{

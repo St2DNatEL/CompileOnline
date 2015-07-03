@@ -1,0 +1,13 @@
+#INCLUDE= -I${SERVER_ROOT}/common \
+#		 -I${SERVER_ROOT}/http \
+#		 -I${SERVER_ROOT}/main \
+#		 -I${SERVER_ROOT}/net \
+#		 -I${SERVER_ROOT}/work \
+#		 
+
+INCLUDE= -I${SERVER_ROOT}/
+		 
+
+
+LIBS= 
+CFLAGS = -g -O2 -Wall -D__XXHLINUX__

@@ -1,6 +1,28 @@
-﻿生成启动时间为 2015/6/28 20:37:41。
+﻿生成启动时间为 2015/7/3 10:49:02。
      1>项目“F:\work_nc\MyProject\CompileOnline\winproject\CompileOnline\CompileOnline.vcxproj”在节点 2 上(Build 个目标)。
-     1>Link:
+     1>ClCompile:
+         E:\vs2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D __XXHWIN__ /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\common\config.cpp ..\..\src\common\my_define.cpp ..\..\src\http\http.cpp ..\..\src\http\request_http.cpp ..\..\src\http\response_http.cpp ..\..\src\main\main.cpp ..\..\src\net\my_socket.cpp ..\..\src\work\compile_work.cpp ..\..\src\work\my_work.cpp ..\..\src\work\work.cpp ..\..\src\work\work_factory.cpp
+         compile_work.cpp
+     1>f:\work_nc\myproject\compileonline\src\work\compile_work.cpp(321): warning C4101: “bf”: 未引用的局部变量
+         my_socket.cpp
+         main.cpp
+         正在生成代码...
+         正在编译...
+         work_factory.cpp
+         work.cpp
+         my_work.cpp
+         response_http.cpp
+     1>f:\work_nc\myproject\compileonline\src\http\response_http.cpp(25): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\vs2012\vc\include\stdio.h(357) : 参见“sprintf”的声明
+         request_http.cpp
+         http.cpp
+         my_define.cpp
+     1>f:\work_nc\myproject\compileonline\src\common\my_define.cpp(14): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\work_nc\myproject\compileonline\src\common\my_define.cpp(40): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\vs2012\vc\include\stdio.h(218) : 参见“fopen”的声明
+         config.cpp
+         正在生成代码...
+       Link:
          E:\vs2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\work_nc\MyProject\CompileOnline\winproject\Debug\CompileOnline.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\work_nc\MyProject\CompileOnline\winproject\Debug\CompileOnline.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\work_nc\MyProject\CompileOnline\winproject\Debug\CompileOnline.lib" /MACHINE:X86 Debug\config.obj
          Debug\log.obj
          Debug\my_define.obj
@@ -14,10 +36,9 @@
          Debug\my_work.obj
          Debug\work.obj
          Debug\work_factory.obj
-         LINK : 没有找到 F:\work_nc\MyProject\CompileOnline\winproject\Debug\CompileOnline.exe 或上一个增量链接没有生成它；正在执行完全链接
          CompileOnline.vcxproj -> F:\work_nc\MyProject\CompileOnline\winproject\Debug\CompileOnline.exe
      1>已完成生成项目“F:\work_nc\MyProject\CompileOnline\winproject\CompileOnline\CompileOnline.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.12
+已用时间 00:00:17.12

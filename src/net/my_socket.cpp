@@ -38,6 +38,7 @@ int MySocket::InitSocket(const string &sip, const int port)
 
 int MySocket::InitDLL()
 {
+#ifdef __WIN__
 	#pragma comment(lib, "ws2_32.lib")
 	// 加载socket动态链接库(dll)  
     WORD wVersionRequested;  
@@ -57,6 +58,7 @@ int MySocket::InitDLL()
         WSACleanup( );  
         return RT_ERR_DLL;   
     }  
+#endif
 	return RT_OK;
 }
 
@@ -71,14 +73,22 @@ int MySocket::GenSocket()
 
 int MySocket::Listen()
 {
+#ifdef __LINUX__
+	addrSrv.sin_addr.s_addr = htonl(INADDR_ANY); 
+#else
 	addrSrv.sin_addr.S_un.S_addr = htonl(INADDR_ANY); // 将INADDR_ANY转换为网络字节序，调用 htonl(long型)或htons(整型)  
+#endif
 	addrSrv.sin_family = AF_INET;  
 	addrSrv.sin_port = htons(mPort);  
 
 	int rt = bind(sockSrv, (SOCKADDR*)&addrSrv, sizeof(SOCKADDR)); // 第二参数要强制类型转换  
 	if(rt < 0)
 	{
+#ifdef __LINUX__
+		close(sockSrv);
+#else
 		closesocket(sockSrv);  
+#endif
 		return RT_ERR_BIND;
 	}
 
@@ -97,7 +107,11 @@ void MySocket::Do()
 	while(1)
 	{
 		SOCKADDR_IN  addrClient;  
+#ifdef __LINUX__
+		socklen_t len = sizeof(addrClient);
+#else
 		int len = sizeof(SOCKADDR);  
+#endif
 		SOCKET sockConn = accept(sockSrv, (SOCKADDR*)&addrClient, &len);  
 
 		char recvBuf[RCVBUFMAX];  

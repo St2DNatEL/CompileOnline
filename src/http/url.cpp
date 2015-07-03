@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdio.h> 
+#include <stdlib.h>
 #include "url.h"
 
 static int hextoi(char *s)
@@ -18,6 +21,15 @@ static int hextoi(char *s)
 	return (value);
 }
 
+char* strdup(const char *strsource, int len)
+{
+	if(strsource == NULL || len <= 0)
+		return NULL;
+
+	char *newchar = new char[len];
+	memcpy(newchar, strsource, len);
+	return newchar;
+}
 string urldecode(const string &str_source)
 {
 	char const *in_str = str_source.c_str();
@@ -26,7 +38,7 @@ string urldecode(const string &str_source)
 	string out_str;
 	char *str;
 
-	str = _strdup(in_str);
+	str = strdup(in_str, in_str_len+1);
 	char *dest = str;
 	char *data = str;
 
@@ -48,7 +60,7 @@ string urldecode(const string &str_source)
 	*dest = '\0';
 	out_str_len =  dest - str;
 	out_str = str;
-	free(str);
+	delete str;
     return out_str;
 }
 
